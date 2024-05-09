@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniGênios</title>
+    <style>
+         /* Estilos CSS */
+        /* Estilos para os botões */
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6699;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffb3d9;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a:hover {
+            color: #ff6699
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .game {
+            border: 2px solid #ff6699;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #ff6699;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0,3s ease;
+        }
+        .btn:hover {
+            background-color: #ff4d94;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MiniGênios</h1>
+    </header>
+    <nav>
+        <!-- Botões de navegação -->
+        <button class="btn" onclick="window.location.href='index.html'">Início</button>
+        <button class="btn" onclick="window.location.href='jogos.html'">Jogos</button>
+        <button class="btn" onclick="window.location.href='atividades.html'">Atividades</button>
+        <button class="btn" onclick="window.location.href='sobre.html'">Sobre</button>
+    </nav>
+    <div class="container">
+        <section id="inicio">
+            <h2>Bem-vindo ao Nosso Site!</h2>
+            <p>Este é um site desenvolvido para o público infantil. Aqui as crianças podem encontrar jogos divertidos, atividades educativas e muito mais!</p>
+        </section>
+        <section id="jogos">
+            <he>Jogos Divertidos</he>
+            <div class="game">
+                <h3>Jogo 1</h3>
+                <img src="jogos/jogo1.png" alt="Jogo 1" width="200">
+                <p>Descrição do Jogo... </p>
+                <button>Jogar Agora</button>
+            </div>
+            <div class="game">
+                <h3>Jogo 2</h3>
+                <img src="jogos/jogo2.png" alt="Jogo 1" width="200">
+                <p>Descrição do Jogo... </p>
+                <button>Jogar Agora</button>
+            </div>
+            </section>
+            <section id="atividades">
+                <h2>Atividades Educativas</h2>
+                <p>Aqui estão algumas atividades educativas para as crianças aprenderem enquanto se divertem:</p>
+                <ul>
+                    <li>Atividade 1</li>
+                    <li>Atividade 2</li>
+                    <li>Atividade 3</li>
+                </ul>
+            </section>
+            <section id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma equipe dedicada a criar conteúdo educativo e divertido para crianças de todas as idades.</p>
+            </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 MiniGênios. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
