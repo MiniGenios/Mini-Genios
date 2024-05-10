@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniGênios - Aprenda e Divirta-se!</title>
+    <!-- Referência ao arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MiniGênios</h1>
+    </header>
+    <nav>
+        <!-- Botões de navegação -->
+        <button class="tab-btn" onclick="openTab('inicio')">Início</button>
+        <button class="tab-btn" onclick="openTab('recursos')">Recursos</button>
+        <button class="tab-btn" onclick="openTab('ajuda')">Ajuda</button>
+        <button class="tab-btn" onclick="openTab('sobre')">Sobre</button>
+    </nav>
+    <div class="container">
+        <!-- Conteúdo das abas -->
+        <div id="inicio" class="tab-content active">
+            <h2>Bem-vindo ao site MiniGênios!</h2>
+            <p>Explore e divirta-se aprendendo com nossos recursos educacionais!</p>
+        </div>
+        <div id="recursos" class="tab-content">
+            <h2>Recursos Educacionais</h2>
+            <p>Aqui você encontrará uma ampla variedade de recursos educacionais, incluindo:</p>
+            <ul>
+                <li>Vídeos educativos</li>
+                <li>Atividades divertidas</li>
+                <li>Livros digitais</li>
+            </ul>
+            <p>Explore nosso conteúdo de alta qualidade e mergulhe no mundo do aprendizado divertido!</p>
+        </div>
+        <div id="ajuda" class="tab-content">
+            <h2>Ajuda e Suporte</h2>
+            <p>Tire suas dúvidas sobre qualquer assunto com o ChatGPT, nossa ferramenta de suporte inteligente!</p>
+            <!-- Adicionar componente de chat aqui -->
+            <p>O ChatGPT estará disponível em breve para ajudar você com suas dúvidas!</p>            
+        </div>
+        <div id="sobre" class="tab-content">
+            <h2>Sobre Nós</h2>
+            <p>O MiniGênios é um site dedicado a tornar o aprendizado divertido e acessível para crianças entre 6 e 13 anos.</p>
+            <p>Nosso objetivo é ajudar as crianças a alcançarem seu máximo potencial acadêmico através de recursos educacionais interativos e de alta qualidade.</p>
+            <p>Estamos comprometidos em oferecer uma experiência educativa envolvente, intuitiva e segura para nossos usuários.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 MiniGênios. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Referência ao arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
