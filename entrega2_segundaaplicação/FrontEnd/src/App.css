@@ -1,0 +1,37 @@
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --black-color: hsl(0, 7%, 97%);
+    --black-color-light: hsl(220, 24%, 15%);
+    --black-color-lighten: hsl(220, 20%, 18%);
+    --white-color: #000000;
+    --body-color: hsl(220, 100%, 97%);
+}
+
+@font-face {
+    font-family: "Lato-Light";   /*Can be any text*/
+    src: local("Lato-Light"),
+      url("./Fonts/Lato-Light.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Lato-Bold";   /*Can be any text*/
+    src: local("Lato-Bold"),
+      url("./Fonts/Lato-Bold.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Lato-Regular";   /*Can be any text*/
+    src: local("Lato-Regular"),
+      url("./Fonts/Lato-Regular.ttf") format("truetype");
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*background-color: var(--black-color);*/
+  }
+

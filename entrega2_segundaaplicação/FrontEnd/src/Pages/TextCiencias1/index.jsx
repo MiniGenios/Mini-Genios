@@ -1,0 +1,85 @@
+import Navbar from "../../Components/Navbar";
+import "../TextDisciplina/textDisciplina.css";
+import { useState } from 'react'
+import axios from "axios";
+
+
+
+function TextCiencias1() {
+  const [result, setResult] = useState('');
+  const [prompt, setPrompt] = useState('');
+
+
+  const handleClick = async () => {
+    // envia uma requisição do tipo POST para o endpoint programado no backend 
+    // a pergunta está guardada na constante prompt
+    // a constante response guarda a resposta enviada pelo backend
+    const response = await axios.post(
+      "http://localhost:4000/genio",
+      { prompt: prompt }
+    );
+    // atribui a constante resposta para o campo result na tela
+    setResult(response.data);
+
+  }
+
+
+  return (
+    <>
+      <Navbar />
+
+      <main className="text-main">
+
+        <section>
+          <h1 className="title-main">
+            Combustíveis
+          </h1>
+          <p className="p-main">
+            Os combustíveis são substâncias capazes de produzir energia térmica por meio de
+            uma reação química.{" "}
+          </p>{" "}
+          <p className="p-main">
+            Os combustíveis são substâncias que, ao sofrerem uma reação química com outra,
+            acabam produzindo energia térmica. Essa energia pode ainda ser convertida em energia
+            mecânica, a fim de realizar trabalho. Os combustíveis podem ser divididos entre
+            renováveis e não renováveis, apresentando-se nos estados sólido, líquido ou gasoso.
+            Devido à grande emissão de gases poluentes na atmosfera pela utilização de combustíveis
+            fósseis (não renováveis), busca-se uma maior utilização de combustíveis renováveis
+            como fontes alternativas de energia.{" "}
+          </p>{" "}
+          <h2 className="p-main">O que são combustíveis?</h2>{" "}
+          <p className="p-main">
+            De maneira simples, podemos entender os combustíveis como substâncias que,
+            ao sofrerem uma reação química com outra, produzem energia térmica. Tal energia
+            produzida também pode ser convertida em energia mecânica e, assim, ser utilizada
+            para trabalho mecânico.{" "}
+          </p>{" "}
+
+        </section>
+
+        {/*=====================================================GENIO=======================================================*/}
+
+        <main className="main-genio">
+          <h1>Tire Suas dúvidas com o Gênio</h1>
+
+          <section className="genio-container">
+            <div className="result-genio">{result}</div>
+
+            <div className="form-genio">
+              <input
+                className="input-genio"
+                placeholder="Escreva aqui"
+                type="text"
+                onChange={(e) => setPrompt(e.target.value)}
+              />
+              <button className="buttom-genio" onClick={handleClick}>
+                Enviar
+              </button>
+            </div>
+          </section>
+        </main>      </main>
+    </>
+  );
+}
+
+export default TextCiencias1;

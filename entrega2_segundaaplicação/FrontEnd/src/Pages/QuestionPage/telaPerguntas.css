@@ -1,0 +1,166 @@
+.content {
+    padding: 20px;
+    margin-top: 50px; /* Adiciona espaço entre o header e o conteúdo */
+}
+
+.main {
+    width: 80%;
+    margin-top: 6%;
+    margin-left: 8%;
+}
+
+.cabecalhoQuestao {
+        padding-top: 40px;
+        margin-left: 7%;
+}
+
+.h1-questao {
+    padding-bottom: 46px;
+}
+
+.question-container {
+    /* Remova o padding e adicione uma borda que envolva todo o conteúdo */
+    border: 1px solid #837878;
+    border-radius: 10px;
+    width: 87%;
+    margin: 50px auto; /* Centraliza o container e adiciona espaço abaixo */
+    position: relative; /* Adiciona posição relativa para poder posicionar as opções */
+    font-family: 'Lato-Bold';
+}
+
+.title-questao {
+    margin: 5vh 0vh 5vh 5vh;
+    font-size: 17;
+}
+
+.container-header {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    text-align: left;
+    background-color: #FFBA08;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+    border-radius: 10px 10px 0px 0px;
+}
+
+.options-container {
+    align-items: flex-start; /* Alinha os itens no topo */
+    width: 100%; /* Faz as opções ocuparem toda a largura do question-container */
+}
+
+.submit-button {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto; /* Alinha o botão à direita */
+    margin-right: auto; /* Alinha o botão à esquerda */
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #ffbf00;
+}
+
+.option input[type="radio"]:checked + label {
+    background-color: #ffc107;
+    color: white;
+}
+
+.option:hover label {
+    background-color: #ffc107;
+    color: white;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+    padding-left: 3vh;
+    font-family: 'Lato-Regular';
+    font-weight: 590;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.option label {
+    font-weight: bold;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #ffc107;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffbf00;
+}
+
+.option p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.quest {
+    margin-left: 40px;
+}
+
+.pergunta {
+    margin-left: 40px;
+    margin-top: 30px;
+    color: #837878;
+}
+
+.option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+}
+
+.question{
+    color: #ffff;
+    padding-left: 20px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.correct-answer {
+    background-color: #99D98C !important;
+    padding: 1vh 0vh 1vh 3vh;
+    width: 100%;
+}
+
+.wrong-answer {
+    background-color: #ef233bd5!important;
+    padding: 1vh 0vh 1vh 3vh;
+    width: 100%;
+}
+
+.submit-button {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    padding: 10px 20px;
+    background-color: #FFBA08;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #ffbf00;
+}

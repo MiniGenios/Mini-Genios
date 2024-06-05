@@ -1,0 +1,35 @@
+.title-video {
+    margin-top: 20vh;
+    margin-left: 14%;
+    margin-bottom: 10vh;
+}
+
+.card-group-video {
+    margin-top: 5%;
+    margin-left: 14%;
+    width: 100%;
+    color: #000;
+    display: block;
+    font-family: 'Lato-Bold';
+}
+
+.card-video {
+    width: 50%;
+    height: 22vh;
+    border: #6C757D 1px solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5vh;
+    color: #000;
+}
+
+.p-video {
+    margin-left: 5vh;
+    font-size: 1.5em;
+}
+
+.img-video {
+    margin-left: 3vh;
+}

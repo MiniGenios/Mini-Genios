@@ -1,0 +1,42 @@
+.main {
+    width: 80%;
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
+.cabecalho-question{
+    padding-top: 40px;
+    padding-left: 7%;
+}
+
+.h1-question {
+    padding-bottom: 50px;
+}
+
+.cardGroup {
+    margin-top: 5%;
+    width: 100%;
+    color: #FFBA08;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.card1 {
+    width: 32vh;
+    height: 36vh;
+    border: #6C757D 1px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card1 p{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+}
